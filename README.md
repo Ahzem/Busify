@@ -34,6 +34,9 @@ The project is structured as follows:
 
 ## Built With
 
+-HTML5
+-CSS3
+-JavaScript
 - [List technologies and frameworks used in the project]
 
 ## Contributing
