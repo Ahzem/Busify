@@ -46,7 +46,13 @@ We welcome contributions from the open-source community. If you'd like to contri
 ## Authors
 
 - [List the names of the project team members]
+- Mohammedh Ahzem
+- Naami Ahmed
+- Rifthan Fathir
+- Amjath Ali
+- Rukmal
 - [Link to each team member's GitHub profile]
+- 
 
 ## License
 
