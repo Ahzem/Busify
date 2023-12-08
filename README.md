@@ -1,6 +1,6 @@
 # Busify - Public Transport Service Tracking and Tickets Booking Application
 
-Welcome to the Busify project repository! This is a group project developed as part of the "Fundamentals of Software Engineering" module at the University of Moratuwa.
+Welcome to the Busify project repository! This is a group project developed as part of the "Fundamentals of Software Engineering" module in Semester 02 at the University of Moratuwa.
 
 ## Overview
 
