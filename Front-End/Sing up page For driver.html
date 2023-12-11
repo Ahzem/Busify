@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+
+.form{
+    margin-top: 125px;
+    margin-left: -305px;
+    width: 440px;
+    height: 450px;
+    background: ;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+}
+.form2{
+    margin-top: 75px;
+    margin-left: 50px;
+    width: 440px;
+    height: 450px;
+    position: absolute;
+    top: 320px;
+    left: 250px;
+    transform: translate(0%,-15%);
+}
+
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    margin: 2px;
+    padding: 8px;
+  
+}
+
+.form .input1{
+    width: 215px;
+    height: 35px;
+    background: #BFD2DA;
+    border-bottom: 1px solid #3db8db;
+    border-top:1px solid #3db8db ;
+    border-right: 1px solid #3db8db;
+    border-left: 1px solid #3db8db;
+    border-radius: 18px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.input2{
+    
+    width: 440px;
+    height: 35px;
+    background: #BFD2DA;
+    border-bottom: 1px solid #3db8db;
+    border-top:1px solid #3db8db ;
+    border-right: 1px solid #3db8db;
+    border-left: 1px solid #3db8db;
+    border-radius: 18px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+
+.form input:focus{
+    outline: 
+}
+
+::placeholder{
+    color: gray;
+    font-family: Arial;
+    text-align: center;
+}
+.btnn{
+    width: 200px;
+    height: 40px;
+    background: #417A92;
+    position:absolute;
+    top: 30%;
+    left: 30%;
+    border: none;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:#776cfa ;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #776cfa;
+}
+
+</style>	
+</head>
+<body> 
+<div class="main">
+	<div class="navbar">
+	<div class="icon">
+		<div class="content">
+
+
+				<div class="form">
+                   <!-- <h2>Login Here</h2> -->
+                   <div >
+                    <legend>
+                    <form  >
+                        <label><h2>Driver Details</h2></label>
+                        <input class="input1" type="text" name="FName" placeholder="Enter First Name"> <input class="input1" type="text" name="LName" placeholder="Enter Last Name"> 
+                        <input class="input2" type="tel" name="Mobile" placeholder="Enter Mobile Number Here">
+                        <input class="input2" type="number" name="NTC number" placeholder="Enter NTC Here">
+                        <input class="input2" type="email" name="" placeholder="Enter Email Here">
+                    </form>
+                </legend>  
+                   </div>
+
+                   <div>
+                    <form >
+                        <label><h2>Vehicle Details</h2></label>
+                        <input class="input1" type="text" name="FName" placeholder="From"> <input class="input1" type="text" name="LName" placeholder="To"> 
+                        <input class="input1" type="number" name="Rout" placeholder="Rout Number">
+                        <input class="input1" type="text" name="Vehicle Model" placeholder="Vehicle Model">
+                        <input class="input1" type="text" name="Vehicle Number" placeholder="Vehicle Number">
+                        <input class="input1" type="number" name="seat" placeholder="Number of seat">
+                        <input class="input2" type="text" name="Service" placeholder="Service Type">
+                        
+                    </form>
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="form2">
+                        <form >
+                            <input class="input2" type="password" name="" placeholder="Enter New Password ">
+                            <input class="input2" type="password" name="" placeholder="Enter Confirm Password ">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p style="text-align: center;">Are You Already Have An account?<a><b> Sing in</b></a></p>
+                            <button class="btnn"><a href="#">Sing Up</a></button>
+                        </form>
+                        </div>
+
+                    
+                    </br>
+                    <br>
+                    <br>
+                    <br>
+
+                   
+                </div>
+               
+                   
+		</div>	
+	</div>
+	</div>
+</div>	
