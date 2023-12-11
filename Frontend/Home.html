@@ -7,70 +7,36 @@
     <link  type="text/css" rel="stylesheet" href="Home.css">
 </head>
 <body>
+
+
+    <!--Header Start-->
     <header>
-        <h2 class="logo">Logo</h2>
         <nav class="navigation">
-            <div>
-                <a class="navigation__a" href="#">Home</a>
-                <a class="navigation__a" href="#">About</a>
-                <a class="navigation__a" href="#">Services</a>
-                <a class="navigation__a" href="#">Contact</a>                
-            </div>
-            <div>
-                <button class="btnLogin-popup">Login</button>
-                <button class="btnSignin-popup">Sign Up</button>
-            </div>
-            
+            <img class="logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\logo name.png" alt="Logo">
+                <div class="header__quick__links">
+                    <a class="navigation__a" href="#">Home</a>
+                    <a class="navigation__a" href="#">About</a>
+                    <a class="navigation__a" href="#">Services</a>
+                    <a class="navigation__a" href="#">Contact</a>                
+                    <button class="btnLogin-popup">Login</button>
+                    <button class="btnSignin-popup">Sign Up</button>
+                    <img class="profile__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\R (4).jpg" alt="profile">
+                </div>
         </nav>
     </header>
-
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-		<table>
-			<tr>
-				<td>Name:</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr>
-				<td>Age:</td>
-				<td><input type="text" name="age"></td>
-			</tr>
-			<tr>
-				<td>Address:</td>
-				<td><input type="text" name="address"></td>
-			</tr>
-			<tr>
-				<td>Phone Number:</td>
-				<td><input type="text" name="phone"></td>
-			</tr>
-			<tr>
-				<td>E-mail:</td>
-				<td><input type="text" name="email"></td>
-			</tr>
-			<tr>
-				<td>University Name:</td>
-				<td><input type="text" name="university"></td>
-			</tr>
-			<tr>
-				<td colspan="2"><input type="submit"></td>
-			</tr>
-		</table>
-	</form>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+    <!--Header End-->
 
     <footer>
         <div class="footer">
             <div class="frame">
-                <div>
+                <div class="footer__quick__links">
                     <a class="footer__a" href="#">Home</a>
                     <a class="footer__a" href="#">About Us</a>
                     <a class="footer__a" href="#">Privacy Policy</a>
                     <a class="footer__a" href="#">Sign in as a Driver</a>
                     <a class="footer__a" href="#">Sign in as a Passenger</a>
                 </div>
-                <div>
+                <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
                     <a class="footer__a" href="#">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
