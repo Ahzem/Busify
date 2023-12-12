@@ -25,14 +25,18 @@ header {
 .logo {
     height: 50px;
     width: auto;
+}
 
+.logo :hover{
+    cursor: pointer;
+    
 }
 
 .header__quick__links{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-left: 300px;
 }
 
@@ -68,7 +72,7 @@ header {
 
 .navigation .btnLogin-popup {
     background: transparent;
-    width: 130px;
+    width: 120px;
     height: 40px;
     border: 2px solid #fff;
     border-radius: 10px;
@@ -87,7 +91,7 @@ header {
 
 .navigation .btnSignin-popup {
     background: transparent;
-    width: 130px;
+    width: 120px;
     height: 40px;
     border: 2px solid #fff;
     border-radius: 10px;
