@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.90);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.logo :hover{
+    cursor: pointer;
+    
+}
+
+.header__quick__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 300px;
+}
+
+.profile__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: #FFF 2px solid;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__a {
+    display: inline;
+    color: #ffffff88;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navigation__a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 3px #fff;
+}
+
+.navigation .btnsignin-popup {
+    background: transparent;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #014E6D;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    opacity: 0.8;
+
+}
+
+.navigation .btnsignin-popup:hover {
+    background: #014E6D;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.navigation .btnsignup-popup {
+    background: transparent;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #014E6D;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    opacity: 0.8;
+}
+
+.navigation .btnsignup-popup:hover {
+    background: #014E6D;
+    color: #fff;
+    opacity: 1;
+}
+
+footer{
+    gap: 10px;
+    position: static;
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    height: 280px;
+    align-items: flex-start;
+    gap: 10px;
+    background: #014E6D;
+    align-items: center;
+}
+
+.footer__a {
+    position: relative;
+    color: #ffffff91;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 3px #fff;
+}
+
+.footer__bottom {
+    display: flex;
+    position: sticky;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fcfcfd;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo{
+    border-radius: 25px;
+    width: 128px;
+    height: 113px;
+}
+
+.company__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.Company__Address p{
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.frame{
+    display: flex;
+    height: 306px;
+    padding: 30px 83px 30px 100px;
+    align-items: flex-start;
+    gap: 127px;
+    color: #FFF;
+}
+
+.socialmedia__logo{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+}
+
+.socialmedia__logo:hover{
+    opacity: 1;
+}
