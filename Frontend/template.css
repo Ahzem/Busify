@@ -29,15 +29,14 @@ header {
 
 .logo :hover{
     cursor: pointer;
-    
 }
 
 .header__quick__links{
+    width: 1000px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
-    margin-left: 300px;
 }
 
 .profile__img{
@@ -51,8 +50,7 @@ header {
 .navigation {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: auto;
 }
 
 .navigation__a {
