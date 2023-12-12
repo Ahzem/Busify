@@ -194,8 +194,11 @@ footer a:hover {
     height: 32px;
     width: 32px;
     opacity: 0.5;
+    margin-top: 5px;
 }
 
 .socialmedia__logo:hover{
     opacity: 1;
+    transition: 0.5s;
+    
 }

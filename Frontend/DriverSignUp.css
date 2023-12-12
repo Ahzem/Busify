@@ -8,8 +8,26 @@ input{
     font-weight: 300;
     box-sizing: border-box;
     outline: none;
-    background: rgba(1, 78, 109, 0.25);
+    background: rgba(1, 78, 109, 0.301);
     width: 320px; 
+}
+
+input:hover{
+    background: rgba(1, 78, 109, 0.342);
+}
+
+input:focus{
+    background: rgba(1, 78, 109, 0);
+    border: 1px solid rgb(1, 78, 109);
+}
+
+input::placeholder{
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+input::after{
+    background: rgba(1, 78, 109, 0.205);
 }
 
 .driver__details{
@@ -123,4 +141,28 @@ label{
     overflow: hidden;
     object-position: 100% 60%;
     align-items: right;
+}
+
+.google__signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: -70px;
+}
+
+.google__logo__div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(1, 78, 109, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.another__login{
+    font-weight: 600;
+    font-size: 13px;
 }
