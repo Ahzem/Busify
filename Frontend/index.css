@@ -6,7 +6,6 @@ a{
     width: 80%;
     height: 80%;
     object-fit: cover;
-    cursor: pointer;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
@@ -66,6 +65,46 @@ a{
     color: #fff;
     box-shadow: #014e6d94 0px 0px 25px 0px;
     transition: all 0.5s ease-in-out;
+}
+
+.selection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.selection__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+.driver{
+    width: 400px;
+    height: 110px;
+    border-radius: 35px;
+    margin: 30px;
+    border: 2px solid #09425A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passenger{
+    width: 400px;
+    height: 110px;
+    border-radius: 35px;
+    margin: 30px;
+    border: 2px solid #09425A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about__us{
@@ -224,3 +263,18 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+.details{
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+  }
+  
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+  
