@@ -70,41 +70,45 @@ header {
     text-shadow: 0 0 3px #fff;
 }
 
-.navigation .btnLogin-popup {
+.navigation .btnsignin-popup {
     background: transparent;
     width: 120px;
     height: 40px;
-    border: 2px solid #fff;
+    border-radius: 10px;
+    border: 2px solid #014E6D;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    opacity: 0.8;
+
+}
+
+.navigation .btnsignin-popup:hover {
+    background: #014E6D;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.navigation .btnsignup-popup {
+    background: transparent;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #014E6D;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.1em;
     color: #fff;
     font-weight: 500;
     transition: all 0.5s ease;
-
+    opacity: 0.8;
 }
 
-.navigation .btnLogin-popup:hover {
-    background: #fff;
-    color: #000000;
-}
-
-.navigation .btnSignin-popup {
-    background: transparent;
-    width: 120px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.1em;
+.navigation .btnsignup-popup:hover {
+    background: #014E6D;
     color: #fff;
-    font-weight: 500;
-    transition: all 0.5s ease;
-}
-
-.navigation .btnSignin-popup:hover {
-    background: #fff;
-    color: #000000;
+    opacity: 1;
 }
 
 footer{

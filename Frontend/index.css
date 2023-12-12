@@ -107,7 +107,7 @@ a{
     align-items: center;
 }
 
-.about__us{
+#about__us{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,7 +150,7 @@ a{
 
 }
 
-.our__services{
+#our__services{
     display: flex;
     justify-content: center;
     align-items: center;
