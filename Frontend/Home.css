@@ -9,6 +9,7 @@
 
 header {
     position: fixed;
+    display:block;
     top: 0;
     left: 0;
     width: 100%;
@@ -104,11 +105,13 @@ header {
 
 footer{
     gap: 10px;
+    position: static;
 }
 
 .footer {
     display: flex;
-    height: 306px;
+    position: relative;
+    height: 280px;
     align-items: flex-start;
     gap: 10px;
     background: #014E6D;
@@ -127,8 +130,6 @@ footer{
     display: flex;
 }
 
-
-
 footer a:hover {
     color: #ffffff;
     text-shadow: 0 0 3px #fff;
@@ -136,64 +137,14 @@ footer a:hover {
 
 .footer__bottom {
     display: flex;
+    position: sticky;
     padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background: #fcfcfd;
-}
-
-.footer__bottom .logo {
-    font-size: 1.5em;
-    color: #fff;
-}
-
-.footer__bottom {
     justify-content: center;
     align-items: center;
-}
-
-.footer__left {
-    display: flex;
-    width: 422px;
-    align-items: center;
-    align-content: center;
-    gap: 25px 52px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-}
-
-.footer__left a {
-    color: #ffffff88;
-    text-decoration: none;
-    font-size: 0.8em;
-    margin-left: 40px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.footer__left a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 3px #fff;
-}
-
-.footer__left__social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__left__social__img {
-    width: 30px;
-    height: 30px;
-    margin-left: 40px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.footer__head {
-    color: #ffffff85;
-    font-size: 15px;
 }
 
 .footer__logo{
@@ -229,91 +180,16 @@ footer a:hover {
     color: #FFF;
 }
 
-.frame__left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.frame__left h1{
-    color: #FFF;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.frame__left p{
-    color: #FFF;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.frame__right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.frame__right h1{
-    color: #FFF;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.frame__right p{
-    color: #FFF;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.frame__right__btn{
-    display: flex;
+.socialmedia__logo{
+    display: inline-block;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
 }
 
-.frame__right__btn .btnLogin-popup {
-    background: transparent;
-    width: 130px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: all 0.5s ease;
-
-}
-
-.frame__right__btn .btnLogin-popup:hover {
-    background: #fff;
-    color: #000000;
-}
-
-.frame__right__btn .btnSignin-popup {
-    background: transparent;
-    width: 130px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: all 0.5s ease;
+.socialmedia__logo:hover{
+    opacity: 1;
 }
