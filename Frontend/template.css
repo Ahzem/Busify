@@ -29,15 +29,14 @@ header {
 
 .logo :hover{
     cursor: pointer;
-    
 }
 
 .header__quick__links{
+    width: 1000px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
-    margin-left: 300px;
 }
 
 .profile__img{
@@ -51,8 +50,7 @@ header {
 .navigation {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: auto;
 }
 
 .navigation__a {
@@ -196,8 +194,11 @@ footer a:hover {
     height: 32px;
     width: 32px;
     opacity: 0.5;
+    margin-top: 5px;
 }
 
 .socialmedia__logo:hover{
     opacity: 1;
+    transition: 0.5s;
+    
 }

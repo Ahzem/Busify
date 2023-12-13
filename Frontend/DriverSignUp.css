@@ -1,0 +1,168 @@
+input{
+    border-radius: 25px;
+    border: none;
+    padding: 8px;
+    padding-left: 12px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    box-sizing: border-box;
+    outline: none;
+    background: rgba(1, 78, 109, 0.301);
+    width: 320px; 
+}
+
+input:hover{
+    background: rgba(1, 78, 109, 0.342);
+}
+
+input:focus{
+    background: rgba(1, 78, 109, 0);
+    border: 1px solid rgb(1, 78, 109);
+}
+
+input::placeholder{
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+input::after{
+    background: rgba(1, 78, 109, 0.205);
+}
+
+.driver__details{
+    margin-top: 100px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+label{
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.input__fields{
+    display: flex;
+    flex-direction: column;
+}
+
+#lname, #fname, #from, #to, #routeno, #busmodel, #busno, #buscolor, #buscapacity, #servicetype{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 150px;
+}
+
+.names, .destination, .route__and__model, .num__and__color, .capacity__and__service{
+    display: flex;
+    flex-direction: flex-start;
+    gap: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 100px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.border__box{
+    border: 1px solid rgb(1, 78, 109);
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.password__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.password__details p{
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 100px;
+}
+
+.password__details p a{
+    color: rgb(1, 78, 109);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.password__details p a:hover{
+    color: rgb(1, 78, 109);
+    text-decoration: underline;
+}
+
+.submit__button{
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    background: rgb(1, 78, 109, 0.8);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.submit__button:hover{
+    background: rgb(1, 78, 109);
+}
+
+.driver__signin__page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: -200px;
+}
+
+.bus__img{
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 100% 60%;
+    align-items: right;
+}
+
+.google__signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: -70px;
+}
+
+.google__logo__div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(1, 78, 109, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.another__login{
+    font-weight: 600;
+    font-size: 13px;
+}
