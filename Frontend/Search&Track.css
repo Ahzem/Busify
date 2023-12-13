@@ -1,0 +1,98 @@
+
+.head__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 150px;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.head__box p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-bottom: -15px;
+    margin-top: 5px;
+
+}
+
+input{
+    border-radius: 25px;
+    border: none;
+    padding: 8px;
+    padding-left: 12px;
+    font-size: 12px;
+    font-weight: 300;
+    box-sizing: border-box;
+    outline: none;
+    background: rgba(1, 78, 109, 0.226);
+    width: 150px; 
+}
+
+input:hover{
+    background: rgba(1, 78, 109, 0.342);
+}
+
+input:focus{
+    background: rgba(1, 78, 109, 0);
+    border: 1px solid rgb(1, 78, 109);
+}
+
+input::placeholder{
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+input::after{
+    background: rgba(1, 78, 109, 0.205);
+}
+
+.search__box{
+    width: 1010px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 40px;
+    border: 1px solid rgb(1, 78, 109);
+    padding: 8px;
+}
+
+.track__box{
+    width: 1010px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 87px;
+    border-radius: 40px;
+    border: 1px solid rgb(1, 78, 109);
+    padding: 8px;
+}
+
+.search__button{
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    outline: none;
+    background: rgba(1, 78, 109, 0.74);
+    width: 110px;
+    height: 36px;
+}
+
+.search__button:focus{
+    background: rgb(1, 78, 109);
+}
+
+.search__button:hover{
+    background: rgb(1, 78, 109);
+}
