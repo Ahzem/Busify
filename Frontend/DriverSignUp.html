@@ -6,6 +6,7 @@
     <title>Document</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
 <!--=================================================Header End===============================================================-->
     <div>
         <div>
-            <form action="DriverSignUp.php" method="POST">
+            <form id="form" action="DriverSignUp.php" method="POST">
 <!--=================================================Driver Details==============================================================-->
         <div class="form">   
             <div>
@@ -39,23 +40,28 @@
                         <div class="input__fields">
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                            <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="lname">Last Name</label>
                             <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                            <div class="error"></div>
                         </div>
                     </div>
                     <div class="input__fields">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+                        <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="nic">NIC Number</label>
                         <input type="text" id="nic" name="nic" placeholder="Your NIC number.." required>
+                        <div class="error"></div>
                     </div>                
                     <div class="input__fields">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Your email.." required>
+                        <div class="error"></div>
                     </div>                    
                 </div>
             </div>    
@@ -69,40 +75,48 @@
                         <div class="input__fields">
                             <label for="from">From</label>
                             <input type="text" id="from" name="from" placeholder="Your starting point.." required>
+                            <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="to">To</label>
                             <input type="text" id="to" name="to" placeholder="Your destination.." required>
+                            <div class="error"></div>
                         </div>
                     </div>
                     <div class="route__and__model">
                         <div class="input__fields">
                             <label for="routeno">Route Number</label>
                             <input type="text" id="routeno" name="routeno" placeholder="Your route number.." required>
+                            <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="busmodel">Bus Model</label>
                             <input type="text" id="busmodel" name="busmodel" placeholder="Your bus model.." required>
+                            <div class="error"></div>
                         </div>
                     </div>
                     <div class="num__and__color">
                         <div class="input__fields">
                             <label for="busno">Bus Number</label>
                             <input type="text" id="busno" name="busno" placeholder="Your bus number.." required>
+                            <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="buscolor">Bus Color</label>
                             <input type="text" id="buscolor" name="buscolor" placeholder="Your bus color.." required>
+                            <div class="error"></div>
                         </div>
                     </div>
                     <div class="capacity__and__service">
                         <div class="input__fields">
                             <label for="buscapacity">Bus Capacity</label>
                             <input type="text" id="buscapacity" name="buscapacity" placeholder="Your bus capacity.." required>
+                            <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="servicetype">Service Type</label>
                             <input type="text" id="servicetype" name="servicetype" placeholder="Your service type.." required>
+                            <div class="error"></div>
                         </div>
                     </div>                    
                 </div>
@@ -113,10 +127,12 @@
                 <div class="input__fields">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Your password.." required>
+                    <div class="error"></div>
                 </div>
                 <div class="input__fields">
                     <label for="cpassword">Confirm Password</label>
                     <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password.." required>
+                    <div class="error"></div>
                 </div>                  
                 <div>
                     <button class="submit__button" type="submit" name="signup">Sign Up</button>

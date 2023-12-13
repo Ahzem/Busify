@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 input{
     border-radius: 25px;
     border: none;
@@ -30,6 +34,15 @@ input::after{
     background: rgba(1, 78, 109, 0.205);
 }
 
+.checkbox{
+    margin: none;
+    padding: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .driver__details{
     margin-top: 100px;
     margin-bottom: 12px;
@@ -48,6 +61,26 @@ label{
 .input__fields{
     display: flex;
     flex-direction: column;
+}
+
+.input__fields input{
+    outline: none;
+}
+
+.input__fields.sucess input{
+    border: 1px solid green;
+}
+
+.input__fields.error input{
+    border: 1px solid red;
+}
+
+.input__fields .error{
+    color: red;
+    font-size: 9px;
+    font-weight: 100;
+    margin-left: 10px;
+
 }
 
 #lname, #fname, #from, #to, #routeno, #busmodel, #busno, #buscolor, #buscapacity, #servicetype{
@@ -87,12 +120,12 @@ label{
     align-items: center;
     margin: auto;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .password__details p{
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 100;
-    margin-bottom: 100px;
 }
 
 .password__details p a{
@@ -149,7 +182,6 @@ label{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: -70px;
 }
 
 .google__logo__div{
@@ -165,4 +197,50 @@ label{
 .another__login{
     font-weight: 600;
     font-size: 13px;
+}
+
+.remember__me{
+    font-size: 11px;
+    font-weight: 100;
+    gap: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.remember__me p{
+    margin-bottom: 13px;
+    color: rgb(1, 78, 109);
+}
+
+.remember__me input{
+    margin-left: -140px;
+}
+
+.forgot__password{
+    font-size: 11px;
+    font-weight: 100;
+    margin-bottom: 13px;
+}
+
+.forgot__password a{
+    color: rgb(1, 78, 109);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.forgot__password a:hover{
+    color: rgb(1, 78, 109);
+    text-decoration: underline;
+}
+
+.other__opt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin-left: 150px;
+    margin-top: -8px;
 }
