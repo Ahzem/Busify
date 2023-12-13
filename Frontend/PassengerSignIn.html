@@ -32,16 +32,16 @@
         </div>
         <div class="driver__signin__details">
             <form id="form" action="DriverSignIn.php" method="POST">
-                <div class="password__details">              
+                <div class="password__details">
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                        <input type="text" id="email" name="email" placeholder="Your email..">
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Your password.." required>
-                        <div class="error"></div>
+                        <input type="password" id="password" name="password" placeholder="Your password..">
+                        <div id="error_password" class="error"></div>
                     </div>
                     <div class="other__opt">
                         <div class="forgot__password">
