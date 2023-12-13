@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
-    <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
+    <link  type="text/css" rel="stylesheet" href="Search&Track.css">
 </head>
 <body>
 
@@ -14,52 +14,64 @@
     <nav class="navigation">
         <img class="logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
-                <a class="navigation__a" href="index.html">Home</a>
+                <a class="navigation__a" href="#">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
-                <!--<button class="btnsignin-popup">Sign In</button>-->
-                <a href="PassengerSignUp.html"><button class="btnsignup-popup">Sign Up</button></a>
-                <!--<img class="profile__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\R (4).jpg" alt="profile">-->
+                <!--<button class="btnsignin-popup">Sign In</button>
+                <button class="btnsignup-popup">Sign Up</button>-->
+                <img class="profile__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\R (4).jpg" alt="profile">
             </div>
     </nav>
 </header>
 <!--=================================================Header End===============================================================-->
-    <div class="driver__signin__page">
-        <div>
-            <img class="bus__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\HomeBus.png" alt="Bus">
-        </div>
-        <div class="driver__signin__details">
-            <form action="DriverSignIn.php" method="POST">
-                <div class="password__details">              
-                    <div class="input__fields">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." required>
-                    </div>
-                    <div class="input__fields">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Your password.." required>
-                    </div>
-                </div>
-                    <div class="password__details">
-                        <p>Forgot Password? <a href="#">Click Here</a></p>
-                    </div>
-                    <div class="google__signin">
-                        <p id="another__login">Or Sign in with</p>
-                        <div class="google__logo__div">
-                            <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-google-100.png" alt="Google"></a>
-                        </div>
-                        <div>
-                            <button class="submit__button" type="submit" name="signin">Sign In</button>
-                        </div>
-                        <div class="password__details">
-                            <p>Are You Don't Have An Account? <a href="PassengerSignUp.html">Sign Up</a></p>
-                        </div>
-                    </div>          
-            </form>
-        </div>        
-    </div>    
 
+<div>
+    <div class="head__box">
+        <p>Online Seat Reservation</p>
+        <div class="search__box">
+            <div>
+                <label>From</label>
+                <input type="text" placeholder="From" required>
+            </div>
+            <div>
+                <label>To</label>
+                <input type="text" placeholder="To" required>
+            </div>
+            <div>
+                <label>Date</label>
+                <input id="date__input" type="date" placeholder="Date" required>
+            </div>
+            <div>
+                <label>Time</label>
+                <input id="time__input" type="time" placeholder="Time">
+            </div>
+            <div>
+                <button class="search__button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="head__box">
+        <p>Track Your Bus</p>
+        <div class="track__box">
+            <div>
+                <label>From</label>
+                <input type="text" placeholder="From" required>
+            </div>
+            <div>
+                <label>To</label>
+                <input type="text" placeholder="To" required>
+            </div>
+            <div>
+                <label>Bus Number</label>
+                <input type="text" placeholder="Bus Number" required>
+            </div>
+            <div>
+                <button class="search__button">Track</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--=================================================Footer Area==============================================================-->
     <footer id="footer">
@@ -70,14 +82,14 @@
                     <a class="footer__a" href="#about__us">About Us</a>
                     <a class="footer__a" href="#">Privacy Policy</a>
                     <a class="footer__a" href="#">Sign in as a Driver</a>
-                    <a class="footer__a" href="#">Sign in as a Passenger</a>
+                    <!--<a class="footer__a" href="#">Sign in as a Passenger</a>-->
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
                     <a class="footer__a" href="#">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
                     <a class="footer__a" href="#">Sign up as a Driver</a>
-                    <a class="footer__a" href="#">Sign up as a Passenger</a>
+                    <!--<a class="footer__a" href="#">Sign up as a Passenger</a>-->
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>
