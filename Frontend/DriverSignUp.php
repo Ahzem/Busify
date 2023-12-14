@@ -1,3 +1,7 @@
+<?php
+include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +17,15 @@
 <!--===============================================Header Start===============================================================-->
 <header>
     <nav class="navigation">
-        <img class="logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\logo name.png" alt="Logo">
+        <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
                 <a class="navigation__a" href="index.html">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
-                <a href="DriverSignIn.html"><button class="btnsignin-popup">Sign In</button></a>
+                <a href="DriverSignIn.php"><button class="btnsignin-popup">Sign In</button></a>
                 <!--<a href=""><button class="btnsignup-popup">Sign Up</button></a>-->
-                <!--<img class="profile__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\R (4).jpg" alt="profile">-->
+                <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
             </div>
     </nav>
 </header>
@@ -39,28 +43,28 @@
                     <div class="names">
                         <div class="input__fields">
                             <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="input__fields">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="nic">NIC Number</label>
-                        <input type="text" id="nic" name="nic" placeholder="Your NIC number.." required>
+                        <input type="text" id="nic" name="nic" placeholder="Your NIC number..">
                         <div class="error"></div>
                     </div>                
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                        <input type="text" id="email" name="email" placeholder="Your email..">
                         <div class="error"></div>
                     </div>                    
                 </div>
@@ -73,49 +77,49 @@
                 <div class="border__box">
                     <div class="destination">
                         <div class="input__fields">
-                            <label for="from">From</label>
-                            <input type="text" id="from" name="from" placeholder="Your starting point.." required>
+                            <label for="dstfrom">From</label>
+                            <input type="text" id="dstfrom" name="dstfrom" placeholder="Your starting point..">
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
-                            <label for="to">To</label>
-                            <input type="text" id="to" name="to" placeholder="Your destination.." required>
+                            <label for="dstto">To</label>
+                            <input type="text" id="dstto" name="dstto" placeholder="Your destination..">
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="route__and__model">
                         <div class="input__fields">
                             <label for="routeno">Route Number</label>
-                            <input type="text" id="routeno" name="routeno" placeholder="Your route number.." required>
+                            <input type="text" id="routeno" name="routeno" placeholder="Your route number..">
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="busmodel">Bus Model</label>
-                            <input type="text" id="busmodel" name="busmodel" placeholder="Your bus model.." required>
+                            <input type="text" id="busmodel" name="busmodel" placeholder="Your bus model..">
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="num__and__color">
                         <div class="input__fields">
                             <label for="busno">Bus Number</label>
-                            <input type="text" id="busno" name="busno" placeholder="Your bus number.." required>
+                            <input type="text" id="busno" name="busno" placeholder="Your bus number..">
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="buscolor">Bus Color</label>
-                            <input type="text" id="buscolor" name="buscolor" placeholder="Your bus color.." required>
+                            <input type="text" id="buscolor" name="buscolor" placeholder="Your bus color..">
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="capacity__and__service">
                         <div class="input__fields">
                             <label for="buscapacity">Bus Capacity</label>
-                            <input type="text" id="buscapacity" name="buscapacity" placeholder="Your bus capacity.." required>
+                            <input type="text" id="buscapacity" name="buscapacity" placeholder="Your bus capacity..">
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="servicetype">Service Type</label>
-                            <input type="text" id="servicetype" name="servicetype" placeholder="Your service type.." required>
+                            <input type="text" id="servicetype" name="servicetype" placeholder="Your service type..">
                             <div class="error"></div>
                         </div>
                     </div>                    
@@ -126,18 +130,18 @@
             <div class="password__details">
                 <div class="input__fields">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Your password.." required>
-                    <div class="error"></div>
+                    <input type="password" id="password" name="password" placeholder="Your password..">
+                    <div id="error_password" class="error"></div>
                 </div>
                 <div class="input__fields">
                     <label for="cpassword">Confirm Password</label>
-                    <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password.." required>
+                    <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
                     <div class="error"></div>
                 </div>                  
                 <div>
                     <button class="submit__button" type="submit" name="signup">Sign Up</button>
                 </div>
-                <p>Are You Already Have An Account? <a href="DriverSignIn.html">Sign In</a></p>
+                <p>Are You Already Have An Account? <a href="DriverSignIn.php">Sign In</a></p>
             </div>
             </form>
         </div>
@@ -163,14 +167,14 @@
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-facebook-100 (1).png" alt="Facebook"></a>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-twitter-100.png" alt="Twitter"></a>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-instagram-100.png" alt="Instagram"></a>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-linkedin-100.png" alt="LinkedIn"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-facebook-100 (1).png" alt="Facebook"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-twitter-100.png" alt="Twitter"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-instagram-100.png" alt="Instagram"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-linkedin-100.png" alt="LinkedIn"></a>
                 </div>
                 <div class="company__detail">
                     <div>
-                        <img class="footer__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\Untitled Project.jpg" width="200px" height="200px" alt="Logo">
+                        <img class="footer__logo" src="Supportive Files\Untitled Project.jpg" width="200px" height="200px" alt="Logo">
                     </div>
                     <div class="Company__Address">
                         <p>Busfy Bus Tracking & Booking (Pvt) Ltd.</p>

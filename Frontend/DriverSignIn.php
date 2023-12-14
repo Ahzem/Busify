@@ -1,3 +1,7 @@
+<?php
+include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,39 +17,35 @@
 <!--===============================================Header Start===============================================================-->
 <header>
     <nav class="navigation">
-        <img class="logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\logo name.png" alt="Logo">
+        <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
                 <a class="navigation__a" href="index.html">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
                 <!--<button class="btnsignin-popup">Sign In</button>-->
-                <a href="DriverSignUp.html"><button class="btnsignup-popup">Sign Up</button></a>
-                <!--<img class="profile__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\R (4).jpg" alt="profile">-->
+                <a href="DriverSignUp.php"><button class="btnsignup-popup">Sign Up</button></a>
+                <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
             </div>
     </nav>
 </header>
 <!--=================================================Header End===============================================================-->
     <div class="driver__signin__page">
         <div>
-            <img class="bus__img" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\HomeBus.png" alt="Bus">
+            <img class="bus__img" src="Supportive Files\HomeBus.png" alt="Bus">
         </div>
         <div class="driver__signin__details">
             <form id="form" action="DriverSignIn.php" method="POST">
-                <div class="password__details">              
+                <div class="password__details">
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." required>
-                        <div class="email__error">
-                            <p class="email__error__p"></p>
-                        </div>
+                        <input type="text" id="email" name="email" placeholder="Your email..">
+                        <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Your password.." required>
-                        <div class="password__error">
-                            <p class="password__error__p"></p>
-                        </div>
+                        <input type="password" id="password" name="password" placeholder="Your password..">
+                        <div id="error_password" class="error"></div>
                     </div>
                     <div class="other__opt">
                         <div class="forgot__password">
@@ -60,7 +60,7 @@
                         <button class="submit__button" type="submit" name="signup">Sign In</button>
                     </div>
                     <div>
-                        <p>Are You Don't Have An Account? <a href="DriverSignUp.html">Sign Up</a></p>
+                        <p>Are You Don't Have An Account? <a href="DriverSignUp.php">Sign Up</a></p>
                     </div>
                 </div>                    
             </form>
@@ -88,14 +88,14 @@
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-facebook-100 (1).png" alt="Facebook"></a>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-twitter-100.png" alt="Twitter"></a>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-instagram-100.png" alt="Instagram"></a>
-                    <a href="#"><img class="socialmedia__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\icons8-linkedin-100.png" alt="LinkedIn"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-facebook-100 (1).png" alt="Facebook"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-twitter-100.png" alt="Twitter"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-instagram-100.png" alt="Instagram"></a>
+                    <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-linkedin-100.png" alt="LinkedIn"></a>
                 </div>
                 <div class="company__detail">
                     <div>
-                        <img class="footer__logo" src="C:\Users\Ahzem\Documents\Busify\Supportive Files\Untitled Project.jpg" width="200px" height="200px" alt="Logo">
+                        <img class="footer__logo" src="Supportive Files\Untitled Project.jpg" width="200px" height="200px" alt="Logo">
                     </div>
                     <div class="Company__Address">
                         <p>Busfy Bus Tracking & Booking (Pvt) Ltd.</p>
