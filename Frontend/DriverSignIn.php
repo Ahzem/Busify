@@ -1,3 +1,7 @@
+<?php
+include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +24,7 @@
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
                 <!--<button class="btnsignin-popup">Sign In</button>-->
-                <a href="PassengerSignUp.html"><button class="btnsignup-popup">Sign Up</button></a>
+                <a href="DriverSignUp.php"><button class="btnsignup-popup">Sign Up</button></a>
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
             </div>
     </nav>
@@ -51,28 +55,19 @@
                             <p>Remember Me</p>
                             <input type="checkbox" id="remember" name="remember">
                         </div>
+                    </div>                  
+                    <div>
+                        <button class="submit__button" type="submit" name="signup">Sign In</button>
                     </div>
-     
-                </div>
-                <div>
-
-                    <div class="google__signin">
-                        <p id="another__login">Or Sign in with</p>
-                        <div class="google__logo__div">
-                            <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-google-100.png" alt="Google"></a>
-                        </div>
-                        <div>
-                            <button class="submit__button" type="submit" name="signin">Sign In</button>
-                        </div>
-                        <div class="password__details">
-                            <p>Are You Don't Have An Account? <a href="PassengerSignUp.html">Sign Up</a></p>
-                        </div>
-                    </div>                     
-                </div>
-         
+                    <div>
+                        <p>Are You Don't Have An Account? <a href="DriverSignUp.php">Sign Up</a></p>
+                    </div>
+                </div>                    
             </form>
         </div>        
     </div>    
+
+
 <!--=================================================Footer Area==============================================================-->
     <footer id="footer">
         <div class="footer">

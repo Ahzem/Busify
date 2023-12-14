@@ -1,3 +1,7 @@
+<?php
+include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +23,7 @@
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
-                <a href="DriverSignIn.html"><button class="btnsignin-popup">Sign In</button></a>
+                <a href="DriverSignIn.php"><button class="btnsignin-popup">Sign In</button></a>
                 <!--<a href=""><button class="btnsignup-popup">Sign Up</button></a>-->
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
             </div>
@@ -137,7 +141,7 @@
                 <div>
                     <button class="submit__button" type="submit" name="signup">Sign Up</button>
                 </div>
-                <p>Are You Already Have An Account? <a href="DriverSignIn.html">Sign In</a></p>
+                <p>Are You Already Have An Account? <a href="DriverSignIn.php">Sign In</a></p>
             </div>
             </form>
         </div>

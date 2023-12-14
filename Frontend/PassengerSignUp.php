@@ -1,9 +1,13 @@
+<?php
+include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Busify Passenger</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
     <script defer src="index.js"></script>
@@ -19,8 +23,8 @@
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
-                <!--<button class="btnsignin-popup">Sign In</button>-->
-                <a href="DriverSignUp.html"><button class="btnsignup-popup">Sign Up</button></a>
+                <a href="PassengerSignIn.php"><button class="btnsignin-popup">Sign In</button></a>
+                <!--<a href="PassengerSignUp.html"><button class="btnsignup-popup">Sign Up</button></a>-->
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
             </div>
     </nav>
@@ -31,8 +35,26 @@
             <img class="bus__img" src="Supportive Files\HomeBus.png" alt="Bus">
         </div>
         <div class="driver__signin__details">
-            <form id="form" action="DriverSignIn.php" method="POST">
-                <div class="password__details">
+            <form id="form" action="insertDataPassenger.php" method="POST">
+                <div class="names">
+                    <div class="input__fields">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input__fields">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="input__fields">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+                    <div class="error"></div>
+                </div>                
+
+                <div class="password__details">              
                     <div class="input__fields">
                         <label for="email">Email</label>
                         <input type="text" id="email" name="email" placeholder="Your email..">
@@ -43,22 +65,24 @@
                         <input type="password" id="password" name="password" placeholder="Your password..">
                         <div id="error_password" class="error"></div>
                     </div>
-                    <div class="other__opt">
-                        <div class="forgot__password">
-                            <a href="#"><p>Forgot Password</p></a>
+                    <div class="input__fields">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
+                        <div class="error"></div>
+                    </div> 
+                </div>
+                    <div class="google__signin">
+                        <p id="another__login">Or Sign in with</p>
+                        <div class="google__logo__div">
+                            <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-google-100.png" alt="Google"></a>
                         </div>
-                        <div class="remember__me">
-                            <p>Remember Me</p>
-                            <input type="checkbox" id="remember" name="remember">
+                        <div>
+                            <button class="submit__button" type="submit" name="signup">Sign Up</button>
                         </div>
-                    </div>                  
-                    <div>
-                        <button class="submit__button" type="submit" name="signup">Sign In</button>
-                    </div>
-                    <div>
-                        <p>Are You Don't Have An Account? <a href="DriverSignUp.html">Sign Up</a></p>
-                    </div>
-                </div>                    
+                        <div class="password__details">
+                            <p>Are You Don't Have An Account? <a href="PassengerSignIn.php">Sign In</a></p>
+                        </div>
+                    </div>          
             </form>
         </div>        
     </div>    

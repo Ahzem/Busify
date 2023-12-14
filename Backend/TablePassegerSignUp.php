@@ -18,7 +18,7 @@ $sql = "CREATE TABLE $tableName (
     fname VARCHAR(30) NOT NULL,
     lname VARCHAR(30) NOT NULL,
     phone VARCHAR(30) NOT NULL,
-    email VARCHAR(30) NOT NULL PRIMARY KEY,
+    email VARCHAR(255) NOT NULL PRIMARY KEY,
     password VARCHAR(30) NOT NULL,
     cpassword VARCHAR(30) NOT NULL
 )";

@@ -1,3 +1,7 @@
+<?php
+include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,11 +39,11 @@
         <div class="selection">
             <div class="driver">
                 <img class="driver__img" src="Frontend\Supportive Files\driver-black.png" alt="Driver">
-                <a href="Frontend\DriverSignIn.html"><p class="selection__buttons">Driver</p></a>
+                <a href="Frontend\DriverSignIn.php"><p class="selection__buttons">Driver</p></a>
             </div>
             <div class="passenger">
                 <img class="passenger__img" src="Frontend\Supportive Files\passenger-black.png" alt="Passenger">
-                <a href="Frontend\PassengerSignIn.html"><p class="selection__buttons">Passenger</p></a>
+                <a href="Frontend\PassengerSignIn.php"><p class="selection__buttons">Passenger</p></a>
             </div>
         </div>
     </details>
