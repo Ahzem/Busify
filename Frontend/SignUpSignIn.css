@@ -92,7 +92,7 @@ label{
     width: 310px;
 }
 
-#lname, #fname, #from, #to, #routeno, #busmodel, #busno, #buscolor, #buscapacity, #servicetype{
+#lname, #fname, #dstfrom, #dstto, #routeno, #busmodel, #busno, #buscolor, #buscapacity, #servicetype{
     display: flex;
     flex-direction: row;
     gap: 20px;
