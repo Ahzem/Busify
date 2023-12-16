@@ -1,14 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "busify_db";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+session_start();
+$conn = mysqli_connect("localhost","root","","busify_db");
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+?>
 

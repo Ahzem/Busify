@@ -1,5 +1,5 @@
 <?php
-include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+require_once '../Backend/ConnectDB.php';
 ?>
 
 <!DOCTYPE html>

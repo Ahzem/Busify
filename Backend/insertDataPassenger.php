@@ -1,35 +1,50 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "busify_db";
+require_once '../Frontend/ConnectDB.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+if (isset($_POST['submit'])) {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    $user_exist_query = "SELECT * FROM passenger_signup WHERE email = '$email'";
+    $result = mysqli_query($conn, $user_exist_query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            echo "
+            <script>
+                alert('User already exists.');
+                window.location.href='Search&Track.php';
+            </script>
+            ";
+        } else {
+            $query = "INSERT INTO passenger_signup (fname, lname, phone, email, password) VALUES ('$fname', '$lname', '$phone', '$email', '$password')";
+            if ($result = mysqli_query($conn, $query)) {
+                echo "
+                <script>
+                    alert('User created successfully.');
+                    window.location.href='PassengerSignIn.php';
+                </script>
+                ";
+            } else {
+                echo "
+                <script>
+                    alert('Cannot Run Query.');
+                    window.location.href='PassengerSignUp.php';
+                </script>
+                ";
+            }
+        }
+    } else {
+        echo "
+        <script>
+            alert('Cannot Run Query.');
+            window.location.href='PassengerSignUp.php';
+        </script>
+        ";
+    }
 }
-
-// Retrieve form data
-$fname = mysqli_real_escape_string($conn, $_POST['fname']);
-$lname = mysqli_real_escape_string($conn, $_POST['lname']);
-$phone = mysqli_real_escape_string($conn, $_POST['phone']);
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$userPassword = mysqli_real_escape_string($conn, $_POST['password']);  // Changed variable name to avoid conflict
-$confirmPassword = mysqli_real_escape_string($conn, $_POST['cpassword']);  // Changed variable name to avoid conflict
-
-// Insert data into the database
-$insert_query = "INSERT INTO passenger_signup (fname, lname, phone, email, password, cpassword) VALUES ('$fname', '$lname', '$phone', '$email', '$userPassword', '$confirmPassword')";
-
-//if data inserted successfully, then redirect to login page
-if ($conn->query($insert_query) === TRUE) {
-    header("Location: PassengerSignIn.php");
-} else {
-    echo "Error: " . $insert_query . "<br>" . $conn->error;
-}
-
-// Close connection
-$conn->close();
 ?>

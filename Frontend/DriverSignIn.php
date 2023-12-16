@@ -1,5 +1,5 @@
 <?php
-include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+require_once '../Backend/ConnectDB.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
     <nav class="navigation">
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
-                <a class="navigation__a" href="index.html">Home</a>
+                <a class="navigation__a" href="index.php">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
@@ -35,16 +35,16 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
             <img class="bus__img" src="Supportive Files\HomeBus.png" alt="Bus">
         </div>
         <div class="driver__signin__details">
-            <form id="form" action="DriverSignIn.php" method="POST">
+            <form id="form" action="DriverSignIn.php" method="POST"onsubmit="return validateInputs();">
                 <div class="password__details">
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Your password..">
+                        <input class="input" type="password" id="password" name="password" placeholder="Your password..">
                         <div id="error_password" class="error"></div>
                     </div>
                     <div class="other__opt">
@@ -53,7 +53,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                         </div>
                         <div class="remember__me">
                             <p>Remember Me</p>
-                            <input type="checkbox" id="remember" name="remember">
+                            <input class="input" type="checkbox" id="remember" name="remember">
                         </div>
                     </div>                  
                     <div>
