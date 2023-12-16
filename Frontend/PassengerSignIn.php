@@ -1,8 +1,27 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 require_once '../Backend/ConnectDB.php';
+
+if(isset($_POST["submit"])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $result = mysqli_query($conn, "SELECT * FROM passenger_signup WHERE email = '$email'");
+    $row = mysqli_fetch_assoc($result);
+    if($password == $row['password']){
+        echo "
+        <script>
+            alert('User logged in successfully.');
+            window.location.href='Search&Track.php';
+        </script>
+        ";
+    }else{
+        echo "
+        <script>
+            document.getElementByclassName('error').innerHTML = 'Invalid Email or Password';
+        </script>
+        ";
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -38,16 +57,16 @@ require_once '../Backend/ConnectDB.php';
             <img class="bus__img" src="Supportive Files\HomeBus.png" alt="Bus">
         </div>
         <div class="driver__signin__details">
-            <form id="form" action="DriverSignIn.php" method="POST">
+            <form id="form" action="" method="POST" onsubmit="return validateInputs();">
                 <div class="password__details">
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="email" id="email" name="email" placeholder="Your email.." required>
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input class="input" type="password" id="password" name="password" placeholder="Your password..">
+                        <input class="input" type="password" id="password" name="password" placeholder="Your password.." required>
                         <div id="error_password" class="error"></div>
                     </div>
                     <div class="other__opt">
