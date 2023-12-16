@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+/*const form = document.getElementById("form");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -73,14 +73,5 @@ const validateInputs = () => {
         setError(cpassword, 'Passwords do not match');
         isValidForm = false;
     }
-
-    const formErrors = document.getElementById('form-errors');
-
-    if (!isValidForm) {
-        formErrors.textContent = 'Please correct the errors in the form.';
-    } else {
-        formErrors.textContent = '';
-        // Uncomment the line below if you want to submit the form when it's valid
-        // form.submit();
-    }
 };
+*/

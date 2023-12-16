@@ -1,3 +1,6 @@
+<?php
+require_once '../Backend/ConnectDB.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,6 +1,52 @@
 <?php
-include 'Backend\insertDataPassenger.php';
-require 'Backend\ConnectDB.php';
+require_once '../Backend/ConnectDB.php';
+
+if (isset($_POST['submit'])) {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+
+    $user_exist_query = "SELECT * FROM passenger_signup WHERE email = '$email'";
+    $result = mysqli_query($conn, $user_exist_query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            echo "
+            <script>
+                alert('User already exists.');
+                window.location.href='PassengerSignIn.php';
+            </script>
+            ";
+        } else {
+            $query = "INSERT INTO passenger_signup (fname, lname, phone, email, password) VALUES ('$fname', '$lname', '$phone', '$email', '$password')";
+            if ($result = mysqli_query($conn, $query)) {
+                echo "
+                <script>
+                    alert('User created successfully.');
+                    window.location.href='Search&Track.php';
+                </script>
+                ";
+            } else {
+                echo "
+                <script>
+                    alert('Cannot Run Query.');
+                    window.location.href='PassengerSignUp.php';
+                </script>
+                ";
+            }
+        }
+    } else {
+        echo "
+        <script>
+            alert('Cannot Run Query.');
+            window.location.href='PassengerSignUp.php';
+        </script>
+        ";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +57,7 @@ require 'Backend\ConnectDB.php';
     <title>Busify Passenger</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
-    <script defer src="index.js"></script>
+    
 </head>
 <body>
 
@@ -20,7 +66,7 @@ require 'Backend\ConnectDB.php';
     <nav class="navigation">
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
-                <a class="navigation__a" href="index.html">Home</a>
+                <a class="navigation__a" href="index.php">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
@@ -36,40 +82,41 @@ require 'Backend\ConnectDB.php';
             <img class="bus__img" src="Supportive Files\HomeBus.png" alt="Bus">
         </div>
         <div class="driver__signin__details">
-            <form id="form" action="insertDataPassenger.php" method="POST">
+        <form id="form" action="" method="POST" onsubmit="return validateInputs();">
                 <div class="names">
                     <div class="input__fields">
                         <label for="fname">First Name</label>
-                        <input class="input" type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input class="input" type="text" id="fname" name="firstname" placeholder="Your name.." required>
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="lname">Last Name</label>
-                        <input class="input" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input class="input" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
                         <div class="error"></div>
                     </div>
                 </div>
                 <div class="input__fields">
                     <label for="phone">Phone Number</label>
-                    <input class="input" type="tel" id="phone" name="phone" placeholder="Your phone number..">
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
                     <div class="error"></div>
                 </div>                
 
                 <div class="password__details">              
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="text" id="email" name="email" placeholder="Your email.." required>
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input class="input" type="password" id="password" name="password" placeholder="Your password..">
+                        <input class="input" type="password" id="password" name="password" placeholder="Your password.." required>
                         <div id="error_password" class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="cpassword">Confirm Password</label>
-                        <input class="input" type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
-                        <div class="error"></div>
+                        <input class="input" type="password" id="cpassword" name="cpassword" placeholder="Confirm password.." required>
+                        <div class="error"></div><br>
+                        <div class="error" id="form-errors"></div>
                     </div> 
                 </div>
                     <div class="google__signin">
@@ -87,7 +134,6 @@ require 'Backend\ConnectDB.php';
             </form>
         </div>        
     </div>    
-
 
 <!--=================================================Footer Area==============================================================-->
     <footer id="footer">

@@ -1,16 +1,71 @@
 <?php
-include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
-?>
+require_once '../Backend/ConnectDB.php';
 
+if (isset($_POST['submit'])) {
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $phone = $_POST['phone'];
+    $nic = $_POST['nic'];
+    $email = $_POST['email'];
+    $from = $_POST['dstfrom'];
+    $to = $_POST['dstto'];
+    $routeno = $_POST['routeno'];
+    $busmodel = $_POST['busmodel'];
+    $busno = $_POST['busno'];
+    $buscolor = $_POST['buscolor'];
+    $buscapacity = $_POST['buscapacity'];
+    $servicetype = $_POST['servicetype'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+
+    $user_exist_query = "SELECT * FROM driver_signup WHERE busno = '$busno'";
+    $result = mysqli_query($conn, $user_exist_query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            echo "
+            <script>
+                alert('User already exists.');
+                window.location.href='DriverSignIn.php';
+            </script>
+            ";
+        } else {
+            $query = "INSERT INTO driver_signup (fname, lname, phone, nic, email, dstfrom, dstto, routeno, busmodel, busno, buscolor, buscapacity, servicetype, password) VALUES ('$fname', '$lname', '$phone', '$nic', '$email', '$from', '$to', '$routeno', '$busmodel', '$busno', '$buscolor', '$buscapacity', '$servicetype', '$password')";
+            if ($result = mysqli_query($conn, $query)) {
+                echo "
+                <script>
+                    alert('User created successfully.');
+                    window.location.href='DriverSignIn.php';
+                </script>
+                ";
+            } else {
+                echo "
+                <script>
+                    alert('Cannot Run Query.');
+                    window.location.href='DriverSignUp.php';
+                </script>
+                ";
+            }
+        }
+    } else {
+        echo "
+        <script>
+            alert('Cannot Run Query.');
+            window.location.href='DriverSignUp.php';
+        </script>
+        ";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Busify Driver</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
-    <script defer src="index.js"></script>
+
 </head>
 <body>
 
@@ -19,7 +74,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
     <nav class="navigation">
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
-                <a class="navigation__a" href="index.html">Home</a>
+                <a class="navigation__a" href="index.php">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
@@ -32,7 +87,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
 <!--=================================================Header End===============================================================-->
     <div>
         <div>
-            <form id="form" action="DriverSignUp.php" method="POST">
+            <form id="form" action="" method="POST" onsubmit="return validateInput();">
 <!--=================================================Driver Details==============================================================-->
         <div class="form">   
             <div>
@@ -43,28 +98,28 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                     <div class="names">
                         <div class="input__fields">
                             <label for="fname">First Name</label>
-                            <input class="input" type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <input class="input" type="text" id="fname" name="fname" placeholder="Your name.." required>
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="lname">Last Name</label>
-                            <input class="input" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <input class="input" type="text" id="lname" name="lname" placeholder="Your last name.." required>
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="input__fields">
                         <label for="phone">Phone Number</label>
-                        <input class="input" type="tel" id="phone" name="phone" placeholder="Your phone number..">
+                        <input class="input" type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="nic">NIC Number</label>
-                        <input class="input" type="text" id="nic" name="nic" placeholder="Your NIC number..">
+                        <input class="input" type="text" id="nic" name="nic" placeholder="Your NIC number.." required>
                         <div class="error"></div>
                     </div>                
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="email" id="email" name="email" placeholder="Your email.." required>
                         <div class="error"></div>
                     </div>                    
                 </div>
@@ -78,48 +133,48 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                     <div class="destination">
                         <div class="input__fields">
                             <label for="dstfrom">From</label>
-                            <input class="input" type="text" id="dstfrom" name="dstfrom" placeholder="Your starting point..">
+                            <input class="input" type="text" id="dstfrom" name="dstfrom" placeholder="Your starting point.." required>
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="dstto">To</label>
-                            <input class="input" type="text" id="dstto" name="dstto" placeholder="Your destination..">
+                            <input class="input" type="text" id="dstto" name="dstto" placeholder="Your destination.." required>
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="route__and__model">
                         <div class="input__fields">
                             <label for="routeno">Route Number</label>
-                            <input class="input" type="text" id="routeno" name="routeno" placeholder="Your route number..">
+                            <input class="input" type="text" id="routeno" name="routeno" placeholder="Your route number.." required>
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="busmodel">Bus Model</label>
-                            <input class="input" type="text" id="busmodel" name="busmodel" placeholder="Your bus model..">
+                            <input class="input" type="text" id="busmodel" name="busmodel" placeholder="Your bus model.." required>
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="num__and__color">
                         <div class="input__fields">
                             <label for="busno">Bus Number</label>
-                            <input class="input" type="text" id="busno" name="busno" placeholder="Your bus number..">
+                            <input class="input" type="text" id="busno" name="busno" placeholder="Your bus number.." required>
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="buscolor">Bus Color</label>
-                            <input class="input" type="text" id="buscolor" name="buscolor" placeholder="Your bus color..">
+                            <input class="input" type="text" id="buscolor" name="buscolor" placeholder="Your bus color.." required>
                             <div class="error"></div>
                         </div>
                     </div>
                     <div class="capacity__and__service">
                         <div class="input__fields">
                             <label for="buscapacity">Bus Capacity</label>
-                            <input class="input" type="text" id="buscapacity" name="buscapacity" placeholder="Your bus capacity..">
+                            <input class="input" type="text" id="buscapacity" name="buscapacity" placeholder="Your bus capacity.." required>
                             <div class="error"></div>
                         </div>
                         <div class="input__fields">
                             <label for="servicetype">Service Type</label>
-                            <input class="input" type="text" id="servicetype" name="servicetype" placeholder="Your service type..">
+                            <input class="input" type="text" id="servicetype" name="servicetype" placeholder="Your service type.." required>
                             <div class="error"></div>
                         </div>
                     </div>                    
@@ -130,16 +185,16 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
             <div class="password__details">
                 <div class="input__fields">
                     <label for="password">Password</label>
-                    <input class="input" type="password" id="password" name="password" placeholder="Your password..">
+                    <input class="input" type="password" id="password" name="password" placeholder="Your password.." required>
                     <div id="error_password" class="error"></div>
                 </div>
                 <div class="input__fields">
                     <label for="cpassword">Confirm Password</label>
-                    <input class="input" type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
+                    <input class="input" type="password" id="cpassword" name="cpassword" placeholder="Confirm password.." required>
                     <div class="error"></div>
                 </div>                  
                 <div>
-                    <button class="submit__button" type="submit" name="signup">Sign Up</button>
+                    <button class="submit__button" type="submit" name="submit">Sign Up</button>
                 </div>
                 <p>Are You Already Have An Account? <a href="DriverSignIn.php">Sign In</a></p>
             </div>

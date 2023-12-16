@@ -1,9 +1,9 @@
 <?php
-require('ConnectDB.php');
+require_once '../Frontend/ConnectDB.php';
 
 if (isset($_POST['submit'])) {
-    $fname = $_POST['firstname'];
-    $lname = $_POST['lastname'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -14,11 +14,10 @@ if (isset($_POST['submit'])) {
 
     if ($result) {
         if (mysqli_num_rows($result) > 0) {
-            $result_fetch = mysqli_fetch_assoc($result);
             echo "
             <script>
                 alert('User already exists.');
-                window.location.href='PassengerSignUp.php';
+                window.location.href='Search&Track.php';
             </script>
             ";
         } else {

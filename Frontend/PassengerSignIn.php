@@ -1,5 +1,8 @@
 <?php
-include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+require_once '../Backend/ConnectDB.php';
 ?>
 
 <!DOCTYPE html>
@@ -7,10 +10,10 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Busify</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
-    <script defer src="index.js"></script>
+    <script defer src="indexaa.js"></script>
 </head>
 <body>
 
@@ -19,7 +22,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
     <nav class="navigation">
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
-                <a class="navigation__a" href="index.html">Home</a>
+                <a class="navigation__a" href="index.php">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
