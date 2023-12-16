@@ -1,5 +1,6 @@
 <?php
-include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
+include 'Backend\insertDataPassenger.php';
+require 'Backend\ConnectDB.php';
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                 <a class="navigation__a" href="#our__services">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
                 <a href="PassengerSignIn.php"><button class="btnsignin-popup">Sign In</button></a>
-                <!--<a href="PassengerSignUp.html"><button class="btnsignup-popup">Sign Up</button></a>-->
+                <!--<a href="PassengerSignUp.php"><button class="btnsignup-popup">Sign Up</button></a>-->
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
             </div>
     </nav>
@@ -39,35 +40,35 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                 <div class="names">
                     <div class="input__fields">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input class="input" type="text" id="fname" name="firstname" placeholder="Your name..">
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input class="input" type="text" id="lname" name="lastname" placeholder="Your last name..">
                         <div class="error"></div>
                     </div>
                 </div>
                 <div class="input__fields">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="Your phone number..">
                     <div class="error"></div>
                 </div>                
 
                 <div class="password__details">              
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Your password..">
+                        <input class="input" type="password" id="password" name="password" placeholder="Your password..">
                         <div id="error_password" class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="cpassword">Confirm Password</label>
-                        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
+                        <input class="input" type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
                         <div class="error"></div>
                     </div> 
                 </div>
@@ -77,7 +78,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                             <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-google-100.png" alt="Google"></a>
                         </div>
                         <div>
-                            <button class="submit__button" type="submit" name="signup">Sign Up</button>
+                            <button class="submit__button" type="submit" name="submit">Sign Up</button>
                         </div>
                         <div class="password__details">
                             <p>Are You Don't Have An Account? <a href="PassengerSignIn.php">Sign In</a></p>

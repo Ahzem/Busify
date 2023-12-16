@@ -2,7 +2,7 @@ a{
     text-decoration: none;
 }
 
-input{
+.input{
     border-radius: 25px;
     border: none;
     padding: 8px;
@@ -161,6 +161,14 @@ label{
 }
 
 .submit__button:hover{
+    background: rgb(1, 78, 109);
+}
+
+.submit__button:focus{
+    background: rgb(1, 78, 109);
+}
+
+.submit__button:active{
     background: rgb(1, 78, 109);
 }
 

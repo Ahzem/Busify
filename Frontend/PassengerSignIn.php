@@ -39,12 +39,12 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                 <div class="password__details">
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Your password..">
+                        <input class="input" type="password" id="password" name="password" placeholder="Your password..">
                         <div id="error_password" class="error"></div>
                     </div>
                     <div class="other__opt">
@@ -53,7 +53,7 @@ include ("C:\wamp64\www\Busify\Backend\ConnectDB.php");
                         </div>
                         <div class="remember__me">
                             <p>Remember Me</p>
-                            <input type="checkbox" id="remember" name="remember">
+                            <input class="input" type="checkbox" id="remember" name="remember">
                         </div>
                     </div>
      
