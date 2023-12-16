@@ -67,9 +67,9 @@ if (isset($_POST['submit'])) {
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
                 <a class="navigation__a" href="index.php">Home</a>
-                <a class="navigation__a" href="#about__us">About</a>
-                <a class="navigation__a" href="#our__services">Services</a>
-                <a class="navigation__a" href="#footer">Contact</a>                
+                <a class="navigation__a" href="index.php">About</a>
+                <a class="navigation__a" href="index.php">Services</a>
+                <a class="navigation__a" href="index.php">Contact</a>                
                 <a href="PassengerSignIn.php"><button class="btnsignin-popup">Sign In</button></a>
                 <!--<a href="PassengerSignUp.php"><button class="btnsignup-popup">Sign Up</button></a>-->
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
@@ -140,18 +140,18 @@ if (isset($_POST['submit'])) {
         <div class="footer">
             <div class="frame">
                 <div class="footer__quick__links">
-                    <a class="footer__a" href="#">Home</a>
-                    <a class="footer__a" href="#about__us">About Us</a>
-                    <a class="footer__a" href="#">Privacy Policy</a>
-                    <a class="footer__a" href="#">Sign in as a Driver</a>
-                    <a class="footer__a" href="#">Sign in as a Passenger</a>
+                    <a class="footer__a" href="index.php">Home</a>
+                    <a class="footer__a" href="index.php">About Us</a>
+                    <a class="footer__a" href="index.php">Privacy Policy</a>
+                    <a class="footer__a" href="DriverSingIn.php">Sign in as a Driver</a>
+                    <a class="footer__a" href="PassengerSingIn.php">Sign in as a Passenger</a>
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
-                    <a class="footer__a" href="#">Contact Us</a>
+                    <a class="footer__a" href="index.php">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
-                    <a class="footer__a" href="#">Sign up as a Driver</a>
-                    <a class="footer__a" href="#">Sign up as a Passenger</a>
+                    <a class="footer__a" href="DriverSingUp.php">Sign up as a Driver</a>
+                    <a class="footer__a" href="PassengerSingUp.php">Sign up as a Passenger</a>
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>

@@ -1,6 +1,6 @@
 # Busify - Public Transport Service Tracking and Tickets Booking Application
 
-Welcome to the Busify project repository! This is a group project developed as part of the "Fundamentals of Software Engineering" module at the University of Moratuwa.
+Welcome to the Busify project repository! This is a group project developed as part of the "Fundamentals of Software Engineering" module in Semester 02 at the University of Moratuwa.
 
 ## Overview
 
@@ -34,6 +34,9 @@ The project is structured as follows:
 
 ## Built With
 
+-HTML5
+-CSS3
+-JavaScript
 - [List technologies and frameworks used in the project]
 
 ## Contributing
@@ -43,7 +46,13 @@ We welcome contributions from the open-source community. If you'd like to contri
 ## Authors
 
 - [List the names of the project team members]
+- Mohammedh Ahzem
+- Naami Ahmed
+- Rifthan Fathir
+- Amjath Ali
+- Rukmal
 - [Link to each team member's GitHub profile]
+- 
 
 ## License
 
