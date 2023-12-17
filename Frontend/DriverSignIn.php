@@ -30,7 +30,6 @@ if(isset($_POST["submit"])){
     <title>Document</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
-    <script defer src="index.js"></script>
 </head>
 <body>
 
@@ -39,9 +38,9 @@ if(isset($_POST["submit"])){
     <nav class="navigation">
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
-                <a class="navigation__a" href="index.php">Home</a>
-                <a class="navigation__a" href="index.php">About</a>
-                <a class="navigation__a" href="index.php">Services</a>
+                <a class="navigation__a" href="../index.php">Home</a>
+                <a class="navigation__a" href="../index.php">About</a>
+                <a class="navigation__a" href="../index.php">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>                
                 <!--<button class="btnsignin-popup">Sign In</button>-->
                 <a href="DriverSignUp.php"><button class="btnsignup-popup">Sign Up</button></a>
@@ -59,12 +58,12 @@ if(isset($_POST["submit"])){
                 <div class="password__details">
                     <div class="input__fields">
                         <label for="email">Email</label>
-                        <input class="input" type="text" id="email" name="email" placeholder="Your email..">
+                        <input class="input" type="text" id="email" name="email" placeholder="Your email.." required>
                         <div class="error"></div>
                     </div>
                     <div class="input__fields">
                         <label for="password">Password</label>
-                        <input class="input" type="password" id="password" name="password" placeholder="Your password..">
+                        <input class="input" type="password" id="password" name="password" placeholder="Your password.." required>
                         <div id="error_password" class="error"></div>
                     </div>
                     <div class="other__opt">
@@ -93,18 +92,17 @@ if(isset($_POST["submit"])){
         <div class="footer">
             <div class="frame">
                 <div class="footer__quick__links">
-                    <a class="footer__a" href="index.php">Home</a>
-                    <a class="footer__a" href="index.php">About Us</a>
+                    <a class="footer__a" href="../index.php">Home</a>
+                    <a class="footer__a" href="../index.php">About Us</a>
                     <a class="footer__a" href="#">Privacy Policy</a>
-                    <a class="footer__a" href="DriverSingIn.php">Sign in as a Driver</a>
-                    <a class="footer__a" href="PassengerSingIn.php">Sign in as a Passenger</a>
+                    <a class="footer__a" href="PassengerSignIn.php">Sign in as a Passenger</a>
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
-                    <a class="footer__a" href="index.php">Contact Us</a>
+                    <a class="footer__a" href="#">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
-                    <a class="footer__a" href="DriverSingUp.php">Sign up as a Driver</a>
-                    <a class="footer__a" href="PassengerSingUp.php">Sign up as a Passenger</a>
+                    <a class="footer__a" href="DriverSignUp.php">Sign up as a Driver</a>
+                    <a class="footer__a" href="PassengerSignUp.php">Sign up as a Passenger</a>
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>

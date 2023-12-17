@@ -27,8 +27,8 @@ else{
         <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
             <div class="header__quick__links">
                 <a class="navigation__a" href="HomePageAfterLogIn.php">Home</a>
-                <a class="navigation__a" href="#about__us">About</a>
-                <a class="navigation__a" href="#our__services">Services</a>
+                <a class="navigation__a" href="HomePageAfterLogIn.php">About</a>
+                <a class="navigation__a" href="HomePageAfterLogIn.php">Services</a>
                 <a class="navigation__a" href="#footer">Contact</a>
                 <a class="navigation__a" href="../Backend/logout.php">Logout</a>                
                 <!--<button class="btnsignin-popup">Sign In</button>
@@ -93,17 +93,17 @@ else{
         <div class="footer">
             <div class="frame">
                 <div class="footer__quick__links">
-                    <a class="footer__a" href="#">Home</a>
-                    <a class="footer__a" href="#about__us">About Us</a>
-                    <a class="footer__a" href="#">Privacy Policy</a>
-                    <a class="footer__a" href="#">Sign in as a Driver</a>
+                    <a class="footer__a" href="HomePageAfterLogIn.php">Home</a>
+                    <a class="footer__a" href="HomePageAfterLogIn.php">About Us</a>
+                    <a class="footer__a" href="HomePageAfterLogIn.php">Privacy Policy</a>
+                    <a class="footer__a" href="#DriverSignIn.php">Sign in as a Driver</a>
                     <!--<a class="footer__a" href="#">Sign in as a Passenger</a>-->
                 </div>
                 <div class="footer__quick__links">
-                    <a class="footer__a" href="#">FAQ</a>
-                    <a class="footer__a" href="#">Contact Us</a>
-                    <a class="footer__a" href="#">Terms</a>
-                    <a class="footer__a" href="#">Sign up as a Driver</a>
+                    <a class="footer__a" href="HomePageAfterLogIn.php">FAQ</a>
+                    <a class="footer__a" href="#footer">Contact Us</a>
+                    <a class="footer__a" href="HomePageAfterLogIn.php">Terms</a>
+                    <a class="footer__a" href="DriverSignUp.php">Sign up as a Driver</a>
                     <!--<a class="footer__a" href="#">Sign up as a Passenger</a>-->
                 </div>
                 <div>

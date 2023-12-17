@@ -18,7 +18,7 @@ require_once '../Backend/ConnectDB.php';
         <nav class="navigation">
             <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
                 <div class="header__quick__links">
-                    <a class="navigation__a" href="index.php">Home</a>
+                    <a class="navigation__a" href="#">Home</a>
                     <a class="navigation__a" href="#about__us">About</a>
                     <a class="navigation__a" href="#our__services">Services</a>
                     <a class="navigation__a" href="#footer">Contact</a>
@@ -27,12 +27,13 @@ require_once '../Backend/ConnectDB.php';
                 </div>
         </nav>
     </header>
+    <br><br>
 <!--=================================================Header End===============================================================-->
 <section id="home__img"></section>
     <div id="home__img__div">
         <img class="top__bus__img" src="Supportive Files\HomeBus.png" alt="Home Image">
     </div>
-    <details id="details">
+    <!--<details id="details">
         <summary class="get__started__button">GET STARTED</summary>
         <div class="selection">
             <div class="driver">
@@ -44,9 +45,9 @@ require_once '../Backend/ConnectDB.php';
                 <a href="PassengerSignIn.php"><p class="selection__buttons">Passenger</p></a>
             </div>
         </div>
-    </details>
+    </details>-->
 </section>
-
+<br><br><br><br><br>
 <!--=================================================About Us===============================================================-->
 
 <!--<script src="HomePage.js"></script>-->
@@ -70,19 +71,19 @@ require_once '../Backend/ConnectDB.php';
             <div class="our__services__div">
                 <a href="#">
                 <div id="rating">
-                    <img id="rating__img" src="Frontend\Supportive Files\OIP (3).jpg" alt="Rating">
+                    <img id="rating__img" src="Supportive Files\OIP (3).jpg" alt="Rating">
                     <p>Rating</p>
                 </div>
                 </a>
                 <a href="#">
                 <div id="ticketing">
-                    <img id="ticketing__img" src="Frontend\Supportive Files\OIP (2).jpg" alt="Ticketing">
+                    <img id="ticketing__img" src="Supportive Files\OIP (2).jpg" alt="Ticketing">
                     <p>Ticket Booking</p>
                 </div>
                 </a>
                 <a href="#">
                 <div id="tracking">
-                    <img id="tracking__img" src="Frontend\Supportive Files\GPS-Tracking-Definition5.jpg" alt="Trackinh">
+                    <img id="tracking__img" src="Supportive Files\GPS-Tracking-Definition5.jpg" alt="Trackinh">
                     <p>Tracking</p>
                 </div>
                 </a>
@@ -96,14 +97,14 @@ require_once '../Backend/ConnectDB.php';
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">Home</a>
                     <a class="footer__a" href="#about__us">About Us</a>
-                    <a class="footer__a" href="index.php">Privacy Policy</a>
+                    <a class="footer__a" href="#">Privacy Policy</a>
                     <a class="footer__a" href="DriverSignIn.php">Sign in as a Driver</a>
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
                     <a class="footer__a" href="#footer">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
-                    <a class="footer__a" href="DriverSigngUp.php">Sign up as a Driver</a>
+                    <a class="footer__a" href="DriverSignUp.php">Sign up as a Driver</a>
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>
