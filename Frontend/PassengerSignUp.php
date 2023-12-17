@@ -1,6 +1,10 @@
 <?php
 require_once '../Backend/ConnectDB.php';
 
+if(!empty($_SESSION['email'])){
+    header("Location: ../index.php");
+}
+
 if (isset($_POST['submit'])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];

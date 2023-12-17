@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
                 <a class="navigation__a" href="index.php">Home</a>
                 <a class="navigation__a" href="index.php">About</a>
                 <a class="navigation__a" href="index.php">Services</a>
-                <a class="navigation__a" href="index.php">Contact</a>                
+                <a class="navigation__a" href="#footer">Contact</a>                
                 <a href="DriverSignIn.php"><button class="btnsignin-popup">Sign In</button></a>
                 <!--<a href=""><button class="btnsignup-popup">Sign Up</button></a>-->
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->

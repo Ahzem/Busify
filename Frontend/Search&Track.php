@@ -1,5 +1,14 @@
 <?php
 require_once '../Backend/ConnectDB.php';
+if(!empty($_SESSION['email'])){
+    $email = $_SESSION['email'];
+    $sql = "SELECT * FROM passenger_signup WHERE email = '$email'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+}
+else{
+    header("Location: ../index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +29,8 @@ require_once '../Backend/ConnectDB.php';
                 <a class="navigation__a" href="#">Home</a>
                 <a class="navigation__a" href="#about__us">About</a>
                 <a class="navigation__a" href="#our__services">Services</a>
-                <a class="navigation__a" href="#footer">Contact</a>                
+                <a class="navigation__a" href="#footer">Contact</a>
+                <a class="navigation__a" href="../Backend/logout.php">Logout</a>                
                 <!--<button class="btnsignin-popup">Sign In</button>
                 <button class="btnsignup-popup">Sign Up</button>-->
                 <img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">
@@ -28,7 +38,9 @@ require_once '../Backend/ConnectDB.php';
     </nav>
 </header>
 <!--=================================================Header End===============================================================-->
-
+<div class="welcome__user">
+    <p>Hello, <?php echo $row['fname']; ?>!</p>
+</div>
 <div>
     <div class="head__box">
         <p>Online Seat Reservation</p>

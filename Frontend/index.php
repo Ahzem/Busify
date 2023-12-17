@@ -10,7 +10,6 @@ require_once '../Backend/ConnectDB.php';
     <title>BUSIFY</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="index.css">
-    <script defer src="index.js"></script>
 </head>
 <body>
 
@@ -20,9 +19,9 @@ require_once '../Backend/ConnectDB.php';
             <img class="logo" src="Supportive Files\logo name.png" alt="Logo">
                 <div class="header__quick__links">
                     <a class="navigation__a" href="index.php">Home</a>
-                    <a class="navigation__a" href="#index.php">About</a>
-                    <a class="navigation__a" href="index.php">Services</a>
-                    <a class="navigation__a" href="#index.php">Contact</a>                
+                    <a class="navigation__a" href="#about__us">About</a>
+                    <a class="navigation__a" href="#our__services">Services</a>
+                    <a class="navigation__a" href="#footer">Contact</a>                
                     <a href="#details"><button class="btnsignin-popup">Sign In</button></a>
                     <a href="#details"><button class="btnsignup-popup">Sign Up</button></a>
                     <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
@@ -67,21 +66,27 @@ require_once '../Backend/ConnectDB.php';
 
 <!--=================================================Our Services===============================================================-->
 
-    <section id="our__services"></section>
+<section id="our__services"></section>
         <h2 class="home__h2__ii">Our Services</h2>
             <div class="our__services__div">
+                <a href="PassengerSignIn.php">
                 <div id="rating">
-                    <img id="rating__img" src="Supportive Files\OIP (3).jpg" alt="Rating">
+                    <img id="rating__img" src="Frontend\Supportive Files\OIP (3).jpg" alt="Rating">
                     <p>Rating</p>
                 </div>
+                </a>
+                <a href="PassengerSignIn.php">
                 <div id="ticketing">
-                    <img id="ticketing__img" src="Supportive Files\OIP (2).jpg" alt="Ticketing">
+                    <img id="ticketing__img" src="Frontend\Supportive Files\OIP (2).jpg" alt="Ticketing">
                     <p>Ticket Booking</p>
                 </div>
+                </a>
+                <a href="PassengerSignIn.php">
                 <div id="tracking">
-                    <img id="tracking__img" src="Supportive Files\GPS-Tracking-Definition5.jpg" alt="Trackinh">
+                    <img id="tracking__img" src="Frontend\Supportive Files\GPS-Tracking-Definition5.jpg" alt="Trackinh">
                     <p>Tracking</p>
                 </div>
+                </a>
             </div>
     
 
@@ -91,17 +96,17 @@ require_once '../Backend/ConnectDB.php';
             <div class="frame">
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">Home</a>
-                    <a class="footer__a" href="index.php">About Us</a>
+                    <a class="footer__a" href="#about__us">About Us</a>
                     <a class="footer__a" href="index.php">Privacy Policy</a>
-                    <a class="footer__a" href="DriverSingIn.php">Sign in as a Driver</a>
-                    <a class="footer__a" href="PassengerSingIn.php">Sign in as a Passenger</a>
+                    <a class="footer__a" href="DriverSignIn.php">Sign in as a Driver</a>
+                    <a class="footer__a" href="PassengerSignIn.php">Sign in as a Passenger</a>
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
-                    <a class="footer__a" href="#">Contact Us</a>
+                    <a class="footer__a" href="#footer">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
-                    <a class="footer__a" href="DriverSingUp.php">Sign up as a Driver</a>
-                    <a class="footer__a" href="PassengerSingUp.php">Sign up as a Passenger</a>
+                    <a class="footer__a" href="DriverSigngUp.php">Sign up as a Driver</a>
+                    <a class="footer__a" href="PassengerSignUp.php">Sign up as a Passenger</a>
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>

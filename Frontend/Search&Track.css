@@ -5,9 +5,12 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
     padding: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.12);
 }
@@ -95,4 +98,13 @@ input::after{
 
 .search__button:hover{
     background: rgb(1, 78, 109);
+}
+
+.welcome__user{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-bottom: -120px;
+    margin-top: 100px;
+    margin-left: 120px;
 }

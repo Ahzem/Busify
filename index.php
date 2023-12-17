@@ -1,5 +1,5 @@
 <?php
-require_once 'Frontend\ConnectDB.php';
+require_once 'Backend/ConnectDB.php';
 ?>
 
 <!DOCTYPE html>
@@ -70,18 +70,24 @@ require_once 'Frontend\ConnectDB.php';
     <section id="our__services"></section>
         <h2 class="home__h2__ii">Our Services</h2>
             <div class="our__services__div">
+                <a href="Frontend/PassengerSignIn.php">
                 <div id="rating">
                     <img id="rating__img" src="Frontend\Supportive Files\OIP (3).jpg" alt="Rating">
                     <p>Rating</p>
                 </div>
+                </a>
+                <a href="Frontend/PassengerSignIn.php">
                 <div id="ticketing">
                     <img id="ticketing__img" src="Frontend\Supportive Files\OIP (2).jpg" alt="Ticketing">
                     <p>Ticket Booking</p>
                 </div>
+                </a>
+                <a href="Frontend/PassengerSignIn.php">
                 <div id="tracking">
                     <img id="tracking__img" src="Frontend\Supportive Files\GPS-Tracking-Definition5.jpg" alt="Trackinh">
                     <p>Tracking</p>
                 </div>
+                </a>
             </div>
     
 
@@ -90,18 +96,18 @@ require_once 'Frontend\ConnectDB.php';
         <div class="footer">
             <div class="frame">
                 <div class="footer__quick__links">
-                    <a class="footer__a" href="#">Home</a>
-                    <a class="footer__a" href="#">About Us</a>
+                    <a class="footer__a" href="indec.php">Home</a>
+                    <a class="footer__a" href="#about__us">About Us</a>
                     <a class="footer__a" href="#">Privacy Policy</a>
-                    <a class="footer__a" href="#">Sign in as a Driver</a>
-                    <a class="footer__a" href="#">Sign in as a Passenger</a>
+                    <a class="footer__a" href="Frontend/DriverSignIn.php">Sign in as a Driver</a>
+                    <a class="footer__a" href="Frontend/PassengerSignIn.php">Sign in as a Passenger</a>
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
                     <a class="footer__a" href="#">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
-                    <a class="footer__a" href="#">Sign up as a Driver</a>
-                    <a class="footer__a" href="#">Sign up as a Passenger</a>
+                    <a class="footer__a" href="Frontend/DriverSignUp.php">Sign up as a Driver</a>
+                    <a class="footer__a" href="Frontend/PassengerSignUp.php">Sign up as a Passenger</a>
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>

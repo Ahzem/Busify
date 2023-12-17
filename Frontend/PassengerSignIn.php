@@ -6,19 +6,17 @@ if(isset($_POST["submit"])){
     $password = $_POST['password'];
     $result = mysqli_query($conn, "SELECT * FROM passenger_signup WHERE email = '$email'");
     $row = mysqli_fetch_assoc($result);
-    if($password == $row['password']){
-        echo "
-        <script>
-            alert('User logged in successfully.');
-            window.location.href='Search&Track.php';
-        </script>
-        ";
+    if (mysqli_num_rows($result)>0){
+        if($row['password'] == $password){
+            
+            $_SESSION['login'] = true;
+            $_SESSION['email'] = $row['email'];
+            header("Location: Search&Track.php");
+        }else{
+            echo "<script>alert('Password is incorrect!')</script>";
+        }
     }else{
-        echo "
-        <script>
-            document.getElementByclassName('error').innerHTML = 'Invalid Email or Password';
-        </script>
-        ";
+        echo "<script>alert('Email is incorrect or not registered!')</script>";
     }
 }
 
@@ -32,7 +30,6 @@ if(isset($_POST["submit"])){
     <title>Busify</title>
     <link  type="text/css" rel="stylesheet" href="template.css">
     <link  type="text/css" rel="stylesheet" href="SignUpSignIn.css">
-    <script defer src="indexaa.js"></script>
 </head>
 <body>
 
@@ -44,7 +41,7 @@ if(isset($_POST["submit"])){
                 <a class="navigation__a" href="index.php">Home</a>
                 <a class="navigation__a" href="index.php">About</a>
                 <a class="navigation__a" href="index.php">Services</a>
-                <a class="navigation__a" href="index.php">Contact</a>                
+                <a class="navigation__a" href="#footer">Contact</a>                
                 <!--<button class="btnsignin-popup">Sign In</button>-->
                 <a href="PassengerSignUp.php"><button class="btnsignup-popup">Sign Up</button></a>
                 <!--<img class="profile__img" src="Supportive Files\R (4).jpg" alt="profile">-->
@@ -88,7 +85,7 @@ if(isset($_POST["submit"])){
                             <a href="#"><img class="socialmedia__logo" src="Supportive Files\icons8-google-100.png" alt="Google"></a>
                         </div>
                         <div>
-                            <button class="submit__button" type="submit" name="signin">Sign In</button>
+                            <button class="submit__button" type="submit" name="submit">Sign In</button>
                         </div>
                         <div class="password__details">
                             <p>Are You Don't Have An Account? <a href="PassengerSignUp.php">Sign Up</a></p>
