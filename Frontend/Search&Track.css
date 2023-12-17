@@ -1,5 +1,6 @@
 
 .head__box{
+    width: 1050px;
     display: flex;
     flex-direction: column;
     justify-content: center;

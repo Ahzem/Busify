@@ -68,19 +68,19 @@ require_once '../Backend/ConnectDB.php';
 <section id="our__services"></section>
         <h2 class="home__h2__ii">Our Services</h2>
             <div class="our__services__div">
-                <a href="PassengerSignIn.php">
+                <a href="#">
                 <div id="rating">
                     <img id="rating__img" src="Frontend\Supportive Files\OIP (3).jpg" alt="Rating">
                     <p>Rating</p>
                 </div>
                 </a>
-                <a href="PassengerSignIn.php">
+                <a href="#">
                 <div id="ticketing">
                     <img id="ticketing__img" src="Frontend\Supportive Files\OIP (2).jpg" alt="Ticketing">
                     <p>Ticket Booking</p>
                 </div>
                 </a>
-                <a href="PassengerSignIn.php">
+                <a href="#">
                 <div id="tracking">
                     <img id="tracking__img" src="Frontend\Supportive Files\GPS-Tracking-Definition5.jpg" alt="Trackinh">
                     <p>Tracking</p>
@@ -98,14 +98,12 @@ require_once '../Backend/ConnectDB.php';
                     <a class="footer__a" href="#about__us">About Us</a>
                     <a class="footer__a" href="index.php">Privacy Policy</a>
                     <a class="footer__a" href="DriverSignIn.php">Sign in as a Driver</a>
-                    <a class="footer__a" href="PassengerSignIn.php">Sign in as a Passenger</a>
                 </div>
                 <div class="footer__quick__links">
                     <a class="footer__a" href="#">FAQ</a>
                     <a class="footer__a" href="#footer">Contact Us</a>
                     <a class="footer__a" href="#">Terms</a>
                     <a class="footer__a" href="DriverSigngUp.php">Sign up as a Driver</a>
-                    <a class="footer__a" href="PassengerSignUp.php">Sign up as a Passenger</a>
                 </div>
                 <div>
                     <p class="footer__a">Follow Us On</p>

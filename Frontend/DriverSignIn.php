@@ -1,5 +1,25 @@
 <?php
 require_once '../Backend/ConnectDB.php';
+
+if(isset($_POST["submit"])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $result = mysqli_query($conn, "SELECT * FROM driver_signup WHERE email = '$email'");
+    $row = mysqli_fetch_assoc($result);
+    if (mysqli_num_rows($result)>0){
+        if($row['password'] == $password){
+            
+            $_SESSION['login'] = true;
+            $_SESSION['email'] = $row['email'];
+            header("Location: ");
+        }else{
+            echo "<script>alert('Password is incorrect!')</script>";
+        }
+    }else{
+        echo "<script>alert('Email is incorrect or not registered!')</script>";
+    }
+}
+
 ?>
 
 <!DOCTYPE html>

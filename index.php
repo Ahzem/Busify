@@ -10,7 +10,7 @@ require_once 'Backend/ConnectDB.php';
     <title>BUSIFY</title>
     <link  type="text/css" rel="stylesheet" href="Frontend\template.css">
     <link  type="text/css" rel="stylesheet" href="Frontend\index.css">
-    <script defer src="Frontend\index.js"></script>
+
 </head>
 <body>
 
