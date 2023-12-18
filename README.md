@@ -17,7 +17,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - Download and install [WampServer](https://www.wampserver.com/en/) for Windows or [MAMP](https://www.mamp.info/en/downloads/) for macOS.
-- Download and install [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm).
 - Download and install [Visual Studio Code](https://code.visualstudio.com/download) or any other code editor of your choice.
 
 ### Installing
@@ -28,14 +27,14 @@ These instructions will get you a copy of the project up and running on your loc
 git clone https://github.com/Ahzem/Busify.git
 ```
 
-2. Open the application in your browser at `http://localhost:3000` or `localhost/Busify/frontend/index.html`.
+2. Open the application in your browser at `http://localhost:3000` or `localhost/Busify/index.php`.
 
 
 ### Running the Application
 
 - Open the application you installed wampserver and start the server.
 - Go to your browser and type `localhost` in the address bar.
-- Select phpMyAdmin and Create a new database named `Busify`.
+- Select phpMyAdmin and Create a new database named `busify_db`.
 - Create the table name Passenger_signup and add the following columns:
     - `fname` - varchar(50)
     - `lname` - varchar(50)
@@ -81,10 +80,10 @@ We welcome contributions from the open-source community. If you'd like to contri
 
 ## Authors
 
-- [Mohammedh Ahzem](https://www.linkedin.com/in/ahzem/)
+- [Muhammadh Ahzem](https://www.linkedin.com/in/ahzem/)
 - [Naami Ahmed](https://www.linkedin.com/in/naamiahmed/)
-- Rifthan Fathir
-- Amjath Ali
+- [Rifthan Fathir](https://www.linkedin.com/in/rifthan-fathir-9b411b232)
+- [Mohamed Amjad](https://www.linkedin.com/in/mohamed-amjad-935503270)
 - Rukmal Maduranga
 
 ## License
@@ -94,8 +93,6 @@ This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE
 ## Acknowledgments
 
 - [README Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [Contribution Guidelines Template](https://gist.github.com/PurpleBooth/b24679402957c63ec426)
-- [License Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 - [GitHub Pages](https://pages.github.com/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Images](https://bing.com/images)
