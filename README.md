@@ -1,5 +1,7 @@
 # Busify - Public Transport Service Tracking and Tickets Booking Application
 
+![logo name](https://github.com/Ahzem/Busify/assets/123859613/ea916415-0735-4fdf-b015-df4639a2ebc9)
+
 Welcome to the Busify project repository! This is a group project developed as part of the "Fundamentals of Software Engineering" module in Semester 02 at the University of Moratuwa.
 
 ## Overview
@@ -7,6 +9,8 @@ Welcome to the Busify project repository! This is a group project developed as p
 Busify is a Public Transport Service Tracking and Tickets Booking Application designed to streamline public transportation services in Sri Lanka. It offers passengers the ability to book bus tickets, track bus locations in real-time, rate services, and receive assistance for journey planning.
 
 ## Getting Started
+
+![mockup for busify](https://github.com/Ahzem/Busify/assets/123859613/abb2cf35-4e1c-42d3-a59f-2a4a386c2645)
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
