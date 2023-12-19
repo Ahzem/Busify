@@ -27,9 +27,6 @@ These instructions will get you a copy of the project up and running on your loc
 git clone https://github.com/Ahzem/Busify.git
 ```
 
-2. Open the application in your browser at `http://localhost:3000` or `localhost/Busify/index.php`.
-
-
 ### Running the Application
 
 - Open the application you installed wampserver and start the server.
@@ -58,6 +55,46 @@ git clone https://github.com/Ahzem/Busify.git
     - `servicetype` - varchar(50)
     - `password` - varchar(50)
 
+
+2. Open the application in your browser at `localhost/Busify/Backend/ConnectDB.php` to connect the database.
+3. After connecting the database, open the application in your browser at `localhost/Busify/Frontend/index.html` to view the application.
+
+## Implementation Hope
+
+- [x] Passenger Dashboard
+- [x] Passenger Profile
+- [x] Passenger Ticket Booking
+- [x] Passenger Ticket Cancellation
+- [x] Passenger Ticket History
+<details>
+<summary>Click to View More</summary>
+<ul>
+<li>Passenger Feedback</li>
+<li>Passenger Journey Planner</li>
+<li>Passenger Help</li>
+<li>Driver Signup</li>
+<li>Driver Login</li>
+<li>Driver Dashboard</li>
+<li>Driver Profile</li>
+<li>Driver Bus Registration</li>
+<li>Driver Bus Details</li>
+<li>Driver Bus Location</li>
+<li>Driver Bus Route</li>
+<li>Driver Bus Schedule</li>
+<li>Driver Bus History</li>
+<li>Driver Feedback</li>
+<li>Driver Help</li>
+<li>Admin Login</li>
+<li>Admin Dashboard</li>
+<li>Admin Profile</li>
+<li>Admin Passenger Details</li>
+<li>Admin Driver Details</li>
+<li>Admin Bus Details</li>
+<li>Admin Feedback Details</li>
+<li>Admin Help</li>
+</ul>
+</details>
+
 ## Project Structure
 
 The project is structured as follows:
@@ -85,10 +122,6 @@ We welcome contributions from the open-source community. If you'd like to contri
 - [Rifthan Fathir](https://www.linkedin.com/in/rifthan-fathir-9b411b232)
 - [Mohamed Amjad](https://www.linkedin.com/in/mohamed-amjad-935503270)
 - Rukmal Maduranga
-
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
